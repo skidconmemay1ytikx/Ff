@@ -1,0 +1,277 @@
+local GuiMain = Instance.new("ScreenGui")
+local OpenGui = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local MAINGUI = Instance.new("Frame")
+local B1 = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local B2 = Instance.new("TextButton")
+local B3 = Instance.new("TextButton")
+local B4 = Instance.new("TextButton")
+local B5 = Instance.new("TextButton")
+local B6 = Instance.new("TextButton")
+local B7 = Instance.new("TextButton")
+local B8 = Instance.new("TextButton")
+local B9 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+--Properties:
+GuiMain.Name = "GuiMain"
+GuiMain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+OpenGui.Name = "OpenGui"
+OpenGui.Parent = GuiMain
+OpenGui.BackgroundColor3 = Color3.new(0, 0, 0)
+OpenGui.BorderColor3 = Color3.new(1, 1, 1)
+OpenGui.BorderSizePixel = 5
+OpenGui.Position = UDim2.new(0.0242872834, 0, 0.872440934, 0)
+OpenGui.Size = UDim2.new(0, 133, 0, 71)
+
+Open.Name = "Open"
+Open.Parent = OpenGui
+Open.BackgroundColor3 = Color3.new(1, 1, 1)
+Open.Position = UDim2.new(0.135338351, 0, 0.28169015, 0)
+Open.Size = UDim2.new(0, 97, 0, 30)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.new(0, 0, 0)
+Open.TextSize = 14
+Open.MouseButton1Down:connect(function()
+	MAINGUI.Visible = true
+	OpenGui.Visible = false
+end)
+
+MAINGUI.Name = "MAINGUI"
+MAINGUI.Parent = GuiMain
+MAINGUI.BackgroundColor3 = Color3.new(0.355, 0.355, 0.355)
+MAINGUI.BorderColor3 = Color3.new(0.101961, 0.207843, 0.2)
+MAINGUI.BorderSizePixel = 10
+MAINGUI.Position = UDim2.new(0.542766571, 0, 0.199999988, 0)
+MAINGUI.Size = UDim2.new(0, 322, 0, 309)
+MAINGUI.Visible = false
+
+B1.Name = "B1"
+B1.Parent = MAINGUI
+B1.BackgroundColor3 = Color3.new(1, 1, 1)
+B1.Position = UDim2.new(0, 0, 0.197411001, 0)
+B1.Size = UDim2.new(0, 103, 0, 50)
+B1.Font = Enum.Font.SciFi
+B1.Text = "Step 1"
+B1.TextColor3 = Color3.new(0, 0, 0)
+B1.TextScaled = true
+B1.TextSize = 14
+B1.TextWrapped = true
+B1.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v.Name == "Ryusoken" then
+        v.Parent = game.Players.LocalPlayer
+    end
+    end
+end)
+
+TextBox.Parent = MAINGUI
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.Position = UDim2.new(0.1863354, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 203, 0, 50)
+TextBox.Font = Enum.Font.SciFi
+TextBox.Text = "By Duycuto"
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14
+TextBox.TextWrapped = true
+
+B2.Name = "B2"
+B2.Parent = MAINGUI
+B2.BackgroundColor3 = Color3.new(1, 1, 1)
+B2.Position = UDim2.new(0.680124223, 0, 0.197411001, 0)
+B2.Size = UDim2.new(0, 103, 0, 50)
+B2.Font = Enum.Font.SciFi
+B2.Text = "Step 2"
+B2.TextColor3 = Color3.new(0, 0, 0)
+B2.TextScaled = true
+B2.TextSize = 14
+B2.TextWrapped = true
+B2.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = true
+while _G.weapon do
+      wait()
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v.Name == "Ryusoken" then
+        v.Parent = game.Players.LocalPlayer
+    end
+    end
+    end
+end)
+
+B3.Name = "B3"
+B3.Parent = MAINGUI
+B3.BackgroundColor3 = Color3.new(1, 1, 1)
+B3.Position = UDim2.new(0, 0, 0.407766998, 0)
+B3.Size = UDim2.new(0, 103, 0, 50)
+B3.Font = Enum.Font.SciFi
+B3.Text = "Step 3"
+B3.TextColor3 = Color3.new(0, 0, 0)
+B3.TextScaled = true
+B3.TextSize = 14
+B3.TextWrapped = true
+B3.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = false
+while _G.weapon do
+      wait()
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v.Name == "Ryusoken" then
+        v.Parent = game.Players.LocalPlayer
+    end
+    end
+    end
+end)
+
+B4.Name = "B4"
+B4.Parent = MAINGUI
+B4.BackgroundColor3 = Color3.new(1, 1, 1)
+B4.Position = UDim2.new(0.680124223, 0, 0.407766998, 0)
+B4.Size = UDim2.new(0, 103, 0, 50)
+B4.Font = Enum.Font.SciFi
+B4.Text = "Step 4"
+B4.TextColor3 = Color3.new(0, 0, 0)
+B4.TextScaled = true
+B4.TextSize = 14
+B4.TextWrapped = true
+B4.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = true
+while _G.weapon do
+      wait()
+for i,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+    if v.Name == "Ryusoken" then
+        v.Parent = game.Players.LocalPlayer.Backpack
+    end
+    end
+    end
+end)
+
+B5.Name = "B5"
+B5.Parent = MAINGUI
+B5.BackgroundColor3 = Color3.new(1, 1, 1)
+B5.Position = UDim2.new(7.4505806e-09, 0, 0.614886701, 0)
+B5.Size = UDim2.new(0, 103, 0, 50)
+B5.Font = Enum.Font.SciFi
+B5.Text = "Step 5"
+B5.TextColor3 = Color3.new(0, 0, 0)
+B5.TextScaled = true
+B5.TextSize = 14
+B5.TextWrapped = true
+B5.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = false
+while _G.weapon do
+      wait()
+for i,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+    if v.Name == "Ryusoken" then
+        v.Parent = game.Players.LocalPlayer.Backpack
+    end
+    end
+    end
+end)
+
+B6.Name = "B6"
+B6.Parent = MAINGUI
+B6.BackgroundColor3 = Color3.new(1, 1, 1)
+B6.Position = UDim2.new(0.680124223, 0, 0.614886761, 0)
+B6.Size = UDim2.new(0, 103, 0, 50)
+B6.Font = Enum.Font.SciFi
+B6.Text = "Step 6"
+B6.TextColor3 = Color3.new(0, 0, 0)
+B6.TextScaled = true
+B6.TextSize = 14
+B6.TextWrapped = true
+B6.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = true
+while _G.weapon do
+      wait()
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v.Name == "Ryusoken" then
+        v.Parent = game.Players.LocalPlayer.Character
+    end
+    end
+    end
+end)
+
+B7.Name = "B7"
+B7.Parent = MAINGUI
+B7.BackgroundColor3 = Color3.new(1, 1, 1)
+B7.Position = UDim2.new(0, 0, 0.838187695, 0)
+B7.Size = UDim2.new(0, 103, 0, 50)
+B7.Font = Enum.Font.SciFi
+B7.Text = "Step 7"
+B7.TextColor3 = Color3.new(0, 0, 0)
+B7.TextScaled = true
+B7.TextSize = 14
+B7.TextWrapped = true
+B7.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = true
+while _G.weapon do
+      wait(0.1)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+      if v.Name == "Ryusoken" then v:Activate() end
+      end
+      end
+end)
+
+B8.Name = "B8"
+B8.Parent = MAINGUI
+B8.BackgroundColor3 = Color3.new(1, 1, 1)
+B8.Position = UDim2.new(0.680124223, 0, 0.838187695, 0)
+B8.Size = UDim2.new(0, 103, 0, 50)
+B8.Font = Enum.Font.SciFi
+B8.Text = "Script by KobDontCoi"
+B8.TextColor3 = Color3.new(0, 0, 0)
+B8.TextScaled = true
+B8.TextSize = 14
+B8.TextWrapped = true
+B8.MouseButton1Down:connect(function()
+end)
+
+B9.Name = "B9"
+B9.Parent = MAINGUI
+B9.BackgroundColor3 = Color3.new(1, 1, 1)
+B9.Position = UDim2.new(0.338509321, 0, 0.407766998, 0)
+B9.Size = UDim2.new(0, 104, 0, 114)
+B9.Font = Enum.Font.SciFi
+B9.Text = "Stop"
+B9.TextColor3 = Color3.new(0, 0, 0)
+B9.TextScaled = true
+B9.TextSize = 14
+B9.TextWrapped = true
+B9.MouseButton1Down:connect(function()
+local weapon = game.Players.LocalPlayer.Backpack
+_G.weapon = false
+while _G.weapon do
+      wait(0.5)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v.Name == "Ryusoken" then v:Activate() end
+    end
+    end
+
+end)
+
+Close.Name = "Close"
+Close.Parent = MAINGUI
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 1
+Close.Position = UDim2.new(0.931677043, 0, 0, 0)
+Close.Size = UDim2.new(0, 22, 0, 22)
+Close.Font = Enum.Font.SourceSansBold
+Close.Text = "Exit"
+Close.TextColor3 = Color3.new(1, 0, 0.0156863)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextStrokeColor3 = Color3.new(1, 0, 0.0156863)
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+	MAINGUI.Visible = false
+	OpenGui.Visible = true
+end)
